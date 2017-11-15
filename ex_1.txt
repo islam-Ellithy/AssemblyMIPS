@@ -1,0 +1,15 @@
+.data
+newLine : .asciiz "\n"
+.text
+
+main :
+
+li $t0 , 10
+la $a0 , newLine
+li $v0 , 4
+syscall
+li $a0 , 25
+li $v0 , 1
+syscall
+
+.end main
